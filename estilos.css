@@ -5,71 +5,160 @@
     box-sizing: border-box;
 }
 body{
-    font-size: 16px;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .container-fluid{
     width: 100%;
+    height: 40px;
+    background-color: #000;
+}
+.navbar{
+    width: 60%;
+    height: 40px;
     margin: 0 auto;
     display: flex;
-    align-content: space-around;
+    flex-wrap: nowrap;
+    justify-content: space-between;
     align-items: center;
-    /* position: absolute; */
-}
-
-.navbar{
-    height: 50px;
-    background: black;
-    color: white;
-}
-
-.section-border{
-    height: 100%;
-    border-right: 1px solid rgba(255, 255, 255, 0.521) ;
 }
 .logo{
-padding-top: 10px;
-padding-left: 10px;
+        margin-left: 10px;
+}
+.user{
+    flex-grow: 2;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+}
+.user i{
+    display: flex;
+    justify-content: flex-star;
+    align-items: center;
+    padding: 5px 15px;
+    font-size: 20px;
+    color: white;
+}
+.user i span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    margin-left: 15px;
+    
+}
+.menu{
+    flex-grow: 3;
+}
+.menu ul {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.menu ul li{
+    display: inline-block;
+    
 }
 
-.user i{
-    color: white;
-    font-size: 1.5em;
-    margin: 15px;
-    cursor: pointer;
+.menu ul li a{
+    font-weight: 600;
+    border-right: 1px solid gray;
+    padding: 10px 30px;
+    color: aliceblue;
+    text-decoration: none;
 }
-.user:hover{
+.menu ul li a i{
+    margin-left: 45px;
+}
+.menu ul li a:hover{
     border-bottom: 3px solid blue;
 }
-
-.menu ul li{
-    display: inline-block ;
-    padding: 15px;
-    margin: 0;
-}
-.menu ul li a{
-    font-size: 0.95em;
-    font-weight:600;
-    font-family: 'Open Sans', sans-serif;
-    text-decoration: none;
-    color: white;
-}
-.menu ul li:hover{
-    box-sizing: border-box;
-    border-bottom: 3px solid brown;
+.search{
+    flex-grow: 1;
 }
 
 .search input{
-    cursor: pointer;
-    width: 220px;
-    height: 30px;
-    margin-left: 10px;
-    box-sizing: border-box;
+    width: 200px;
+    color: rgba(0, 0, 0, 0.432);
     border: none;
-    font-size: 0.95em;
-    background-color: white;
+    height: 25px;
     background-image: url('IMG/search-solid.svg');
-    background-size: 1.1em;
-    background-position: 190px 7px; 
+    background-size: 15px 15px;
+    background-position: 90%;
     background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px;
 }
+.container{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+.date{
+    width: 60%;
+    margin: 15px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.date h2{
+    font-size: 1.8em;
+    font-weight: bold;
+}
+.date p{
+    color: gray;
+    text-transform: capitalize;
+    font-size: 1.6em;
+}
+.container-principal-noticia{
+    width: 50%;
+    height: 400px;
+    background-image: url('IMG/macau-photo-agency--xrAADPPU4M-unsplash.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+}
+
+.sub-container{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px 10px;
+}
+.container-segundaria-noticia{
+    width: 50%;
+    margin: 5px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.container-segundaria-noticia:nth-child(1){
+    background-image: url('IMG/annie-spratt-FLY7CEwbJsg-unsplash.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+.container-segundaria-noticia:nth-child(2){
+    background-image: url('IMG/annie-spratt-VLefW89NnAw-unsplash.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+.container-segundaria-noticia:nth-child(3){
+    background-image: url('IMG/claudio-schwarz-purzlbaum-zHDzQDr5_DI-unsplash.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+.container-segundaria-noticia:nth-child(4){
+    background-image: url('IMG/pille-riin-priske-O5Fo4vUuIBM-unsplash.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+
