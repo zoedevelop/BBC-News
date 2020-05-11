@@ -4,7 +4,6 @@ body{
 }
 .container-fluid{
     width: 100%;
-    /* padding: 0 16px; */
 }
 
 .navbar{
@@ -79,7 +78,7 @@ body{
     cursor: pointer;
 }
 .container-principal-noticia:hover{
-    opacity: .8;
+    opacity: .9;
 }
 .container-principal-noticia img{
     background-size: cover;
